@@ -1,7 +1,8 @@
 class Fraction
   attr_accessor :numerator, :denominator
 
-  def initialize(numerator, denominator)
+
+  def initialize(numerator = 0, denominator = 1)
     self.numerator = numerator
     self.denominator = denominator
     optimize
@@ -77,6 +78,11 @@ class Fraction
   end
 end
 
-fra1 = Fraction.new(-1, 2)
-fra2 = Fraction.new(2, 4)
-p fra2 / fra1
+fractionArr = [Fraction.new(1, 2), Fraction.new(3, 4), Fraction.new(5, 6), Fraction.new(7, 8)]
+
+sum = fractionArr.inject do |result, element|
+  result += element
+end
+
+p sum.inspect
+
