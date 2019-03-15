@@ -1,6 +1,7 @@
 class Fraction
   attr_accessor :numerator, :denominator
 
+
   def initialize(numerator = 0, denominator = 1)
     self.numerator = numerator
     self.denominator = denominator
@@ -84,3 +85,4 @@ sum = fractionArr.inject do |result, element|
 end
 
 p sum.inspect
+
