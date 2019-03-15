@@ -42,3 +42,4 @@ end
 shapeArr.each_index do |index, element|
   shapeArr[index].area
 end
+puts "yes"
